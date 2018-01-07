@@ -1,12 +1,15 @@
 package edu.thomas.services;
 
 public class FizzBuzzService {
+	public static String small = "number too small";
+	public static String big = "number too small";
+	
 	public static String getFizzBuzz(int number) {
 		if(number<0) {
-			return "number too small";
+			return small;
 		}
 		if(number>100) {
-			return "number too big";
+			return big;
 		}
 		
 		if (number % 3 == 0 && number % 5 == 0) {

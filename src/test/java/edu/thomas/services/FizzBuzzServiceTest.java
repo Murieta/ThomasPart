@@ -27,12 +27,13 @@ public class FizzBuzzServiceTest {
 
 	}
 
+	@Test
 	public void invalideInput() throws Exception {
 		String small = FizzBuzzService.getFizzBuzz(INPUT_TOO_SMALL);
-		assertEquals("number too small", small);
+		assertEquals(FizzBuzzService.small, small);
 
 		String big = FizzBuzzService.getFizzBuzz(INPUT_TOO_LARGE);
-		assertEquals("number too big", big);
+		assertEquals(FizzBuzzService.big, big);
 	}
 
 }
